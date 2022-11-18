@@ -1,0 +1,17 @@
+{{>header}}
+{{>navbar}}
+    <h1 class="text-center font-weight-bol text-uppercase" id="text" style="margin-top:13rem; font-size:7rem;"></h1>
+<script>
+var i = 0;
+var txt = 'Basic Banking App';
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("text").innerHTML += txt.charAt(i);
+    i++;
+  }
+}
+setInterval(typeWriter, 100);
+
+</script>
+{{>footer}}

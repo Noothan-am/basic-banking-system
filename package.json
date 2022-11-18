@@ -1,0 +1,24 @@
+{
+  "name": "banking-app",
+  "version": "1.0.0",
+  "description": "this is basic banking app for grip internship",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Noothan Am",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-validator": "^6.14.2",
+    "hbs": "^4.2.0",
+    "moment": "^2.29.4",
+    "mongodb": "^4.11.0",
+    "mongoose": "^6.7.1",
+    "nodemon": "^2.0.20",
+    "popups": "^1.1.3",
+    "validator": "^13.7.0"
+  }
+}

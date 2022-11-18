@@ -1,0 +1,30 @@
+{{>header}}
+{{>navbar}}
+<h1 class="text-center" style="margin:4rem auto;">All customer details</h1>
+<table class="table container w-75 table-striped table-bordered">
+  <thead class="p-3 mb-2 bg-success text-white">
+    <tr>
+      <th scope="col">Account No</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Current Balance</th>
+    </tr>
+  </thead>
+  <tbody id="myTable">
+    {{#each users}}
+        <tr>
+                <td scope="row">{{this.accno}}</td>
+                <td>{{this.name}}</td>
+                <td>{{this.email}}</td>
+                <td>{{this.balance}}</td>
+            </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+<div class="btn w-100 mx-auto my-3">
+<a href="/adduser"><button type="button" class="btn btn-warning w-25 my-3 p-2 fw-bolder">Add User</button></a>
+<a href="/updateuser"><button type="button" class="btn btn-warning w-25 my-3 mx-3 p-2 fw-bolder">Update Balance</button></a>
+</div>
+{{>footer}}
+

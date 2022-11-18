@@ -1,0 +1,31 @@
+{{>header}}
+{{>navbar}}
+<h1 class="text-center" style="margin:4rem auto;">Your Transaction History</h1>
+<table class="table container table-bordered table-hover" style="width:80%; margin-top: 5rem; margin-left:auto;">
+  <thead class="thead-light">
+    <tr class="text-white bg-dark table-fixed">
+      <th scope="col" >Transaction Id</th>
+      <th scope="col">From</th>
+      <th scope="col">To</th>
+      <th scope="col">Transaction Amount</th>
+      <th scope="col">Transaction Date</th>
+    </tr>
+  </thead>
+  <tbody id="myTable" style="width: fit-content;">  
+	 {{#each newuserdata}}
+            <tr class="table-fixed">
+                <td scope="row">{{this._id}}</td>
+                <td>{{this.from}}</td>
+                <td>{{this.to}}</td>
+                <td>{{this.amount}}</td>
+                <td>{{this.date}}</td>
+            </tr>
+  {{/each}}
+  </tbody>
+</table>
+<div class="btn w-100 mx-auto my-3">
+<a href="/full"><button type="button" onclick="clicked()"  class="btn btn-primary mx-auto w-25 my-3 p-2 fw-bolder">Show Full Statement</button></a>
+</div>
+{{footer}}
+
+	

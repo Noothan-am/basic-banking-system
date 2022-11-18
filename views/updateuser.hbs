@@ -1,0 +1,23 @@
+{{>header}}
+{{>navbar}}
+<h1 class="text-center" style="margin:4rem auto;">Update Balance</h1>
+<div class="form" style="width: 100%; margin-top:5rem;">
+    <form class="border border-dark w-50 mx-auto" action="/updateuser" method="post" style="padding:2rem;">
+        <div class="form-group mb-1 ">
+            <label for="exampleInputPassword1" class="my-2">Account No</label>
+            <input type="number" name="currentaccno" class="form-control" id="accnumber" placeholder="account no">
+        </div>
+        <div class="form-group mb-1 ">
+            <label for="exampleInputPassword1" class="my-2">Update Balance</label>
+            <input type="number" name="addamount" class="form-control" id="password" placeholder="current balance">
+        </div>
+        <div class="form-group mb-1 ">
+            <label for="exampleInputPassword1" class="my-2">Password</label>
+            <input type="password" name="password" class="form-control" id="password" placeholder="password">
+        </div>
+        <div class="btn w-100 mx-auto">
+        <button type="submit" class="btn btn-primary w-50 mt-3">Update</button>
+        </div>
+    </form>
+</div>
+{{>footer}}
